@@ -1,0 +1,15 @@
+apiVersion: v1                                                                                                                                          
+kind: PersistentVolume                                                                                                                                  
+metadata:                                                                                                                                               
+  name: bitwarden-pv                                                                                                                                       
+  labels:                                                                                                                                               
+    app: bitwarden                                                                                                                                         
+spec:                                                                                                                                                   
+  storageClassName: manual                                                                                                                              
+  capacity:                                                                                                                                             
+    storage: 500Mi                                                                                                                                      
+  accessModes:                                                                                                                                          
+    - ReadWriteOnce                                                                                                                                     
+  nfs:                                                                                                                                                  
+    path: /export/ssd/bitwarden
+    server: node06
