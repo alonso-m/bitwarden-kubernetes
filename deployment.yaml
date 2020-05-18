@@ -17,7 +17,7 @@ spec:
       containers:
         - name: bitwarden
           image: bitwardenrs/server:raspberry
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           envFrom:
           - configMapRef:
               name: bitwarden-config

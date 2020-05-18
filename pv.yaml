@@ -11,5 +11,5 @@ spec:
   accessModes:                                                                                                                                          
     - ReadWriteOnce                                                                                                                                     
   nfs:                                                                                                                                                  
-    path: /export/ssd/bitwarden
+    path: /zfs/application-data/bitwarden
     server: node06
