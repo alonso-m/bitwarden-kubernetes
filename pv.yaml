@@ -11,5 +11,5 @@ spec:
   accessModes:                                                                                                                                          
     - ReadWriteOnce                                                                                                                                     
   nfs:                                                                                                                                                  
-    path: /zfs/encrypted/application-data/bitwarden
+    path: /mnt/kingston/application-data/bitwarden
     server: node00
